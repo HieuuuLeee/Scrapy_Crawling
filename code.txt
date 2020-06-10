@@ -1,0 +1,7 @@
+MONGO:
+	Kiểm tra trùng: db.BDS.aggregate([{$group : {_id : "$id", "count": {$sum : 1}}},{"$match": {"count" : {"$gt": 1} } }])
+	db.BDS.aggregate([{$group : {_id : "$ngayDangTai", "count": {$sum : 1}}},{"$match": {"_id" : "24/05/2020"}}])
+CMD:
+	Kiểm tra crontab: service cron status
+URL:
+	Chuyển code: https://notepad.vn/toilanam
